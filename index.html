@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button onclick="appendToDisplay('C')">C</button>
+      <button onclick="appendToDisplay('(')">(</button>
+      <button onclick="appendToDisplay(')')">)</button>
+      <button onclick="appendToDisplay('10^')">10<sup>x</sup></button>
+      <button onclick="memoryClear()">mc</button>
+      <button onclick="memoryAdd()">m+</button>
+      <button onclick="memorySubtract()">m-</button>
+      <button onclick="memoryRecall()">mr</button>
+      <button onclick="appendToDisplay('1/')">1/x</button>
+      <button onclick="appendToDisplay('^2')">x<sup>2</sup></button>
+      <button onclick="appendToDisplay('^3')">x<sup>3</sup></button>
+      <button onclick="appendToDisplay('^')">y<sup>x</sup></button>
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="backspace()">←</button>
+      <button onclick="toggleSign()">+/-</button>
+      <button onclick="appendToDisplay('-')">-</button>
+      <button onclick="appendToDisplay('!')">x!</button>
+      <button onclick="appendToDisplay('sqrt(')">√</button>
+      <button onclick="appendToDisplay('/')">x/y</button>
+      <button onclick="appendToDisplay('log(')">lg</button>
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('*')">×</button>
+      <button onclick="appendToDisplay('sin(')">sin</button>
+      <button onclick="appendToDisplay('cos(')">cos</button>
+      <button onclick="appendToDisplay('tan(')">tan</button>
+      <button onclick="appendToDisplay('ln(')">ln</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('-')">-</button>
+      <button onclick="appendToDisplay('sinh(')">sinh</button>
+      <button onclick="appendToDisplay('cosh(')">cosh</button>
+      <button onclick="appendToDisplay('tanh(')">tanh</button>
+      <button onclick="appendToDisplay('e^')">e<sup>x</sup></button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('+')">+</button>
+      <button onclick="setDegrees()">Deg</button>
+      <button onclick="setRadians()">Rad</button>
+      <button onclick="appendToDisplay('EE')">EE</button>
+      <button onclick="appendToDisplay('Rand')">Rand</button>
+      <button onclick="appendToDisplay('96')">96</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
